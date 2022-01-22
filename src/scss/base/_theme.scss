@@ -1,0 +1,50 @@
+// .title-font{
+//   font-family: 'Maison Neue';
+// }
+// .body-font{
+//   font-family: 'Anton';
+// }
+
+//utilities 
+.px-4{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media-query('b-m-up') {
+    max-width: 800px;
+  }
+  @include media-query('b-l-up') {
+    max-width: 991px;
+  }
+  @include media-query('b-xl-up') {
+    max-width: 1200px;
+  }
+
+  @include media-query('b-xxl-up') {
+    max-width: 1400px;
+  }
+}
+
+.flex{
+  display: flex;
+}
+.flex-flex{
+  flex-wrap: wrap;
+}
+.items-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content:center;
+}

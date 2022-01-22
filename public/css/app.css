@@ -220,6 +220,22 @@ a:hover {
   outline: 0;
 }
 
+@font-face {
+  font-family: "Anton";
+  src: url(/fonts/Anton-Regular.eot?551e7d7ab0e99f220917820cdc23fdb3);
+  src: url(/fonts/Anton-Regular.eot?551e7d7ab0e99f220917820cdc23fdb3?#iefix) format("embedded-opentype"), url(/fonts/Anton-Regular.woff2?b3a57982e82d9e3082b66c25aeb93d29) format("woff2"), url(/fonts/Anton-Regular.woff?4337c4346e2a6971e3aaecbad30b0eb1) format("woff"), url(/fonts/Anton-Regular.ttf?b04ec03c09768e5907b7fa7600fe914d) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Maison Neue";
+  src: url(/fonts/MaisonNeue-Light.eot?55303d0481a38c761f18fe55126b3759);
+  src: url(/fonts/MaisonNeue-Light.eot?55303d0481a38c761f18fe55126b3759?#iefix) format("embedded-opentype"), url(/fonts/MaisonNeue-Light.woff2?ece1e53116985490ad2ba49eb86f0df0) format("woff2"), url(/fonts/MaisonNeue-Light.woff?a8d2e37b4f51f8eb084b5877cb9a2b2e) format("woff"), url(/fonts/MaisonNeue-Light.ttf?b9bcbbb927178febd62306416d754d7d) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -227,3 +243,234 @@ a:hover {
    Full vh helper
    https://gist.github.com/MarioSo/833eace64f225f66083ea689c16a526c
    ========================================================================== */
+/* ==========================================================================
+   Settings
+   ========================================================================== */
+/* Fonts
+   ========================================================================== */
+/* Colors
+   ========================================================================== */
+/* Headings
+      ========================================================================== */
+/* Widths
+   ========================================================================== */
+/* Breakpoints
+   ========================================================================== */
+/* Transitions
+   ========================================================================== */
+/* Design
+   ========================================================================== */
+.px-4 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 750px) {
+  .container {
+    max-width: 800px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .container {
+    max-width: 991px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-flex {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+header {
+  background-color: #000000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 750px) {
+  header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+header .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 0;
+}
+@media screen and (min-width: 750px) {
+  header .container {
+    flex-direction: row;
+  }
+}
+header .download-buttons a:not(:first-child) {
+  margin-left: 20px;
+}
+@media screen and (max-width: 749px) {
+  header .download-buttons {
+    margin-top: 15px;
+  }
+}
+
+.hero-section {
+  color: #ffffff;
+  position: relative;
+}
+.hero-section .hero-banner {
+  height: 100vh;
+  width: 100%;
+}
+.hero-section .hero-banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.hero-section .hero-title-box,
+.hero-section .hero-content-box {
+  position: absolute;
+  right: 0;
+  background: #000000;
+  padding: 50px 70px;
+  z-index: 10;
+  width: 100%;
+  max-width: 600px;
+}
+@media screen and (min-width: 1280px) {
+  .hero-section .hero-title-box,
+.hero-section .hero-content-box {
+    max-width: 800px;
+  }
+}
+.hero-section .hero-title-box {
+  top: 0;
+}
+.hero-section .hero-title-box span {
+  font-size: 16px;
+  text-transform: unset;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+  display: block;
+}
+@media screen and (min-width: 1280px) {
+  .hero-section .hero-title-box span {
+    letter-spacing: 0.3em;
+    margin-bottom: 30px;
+  }
+}
+.hero-section .hero-title-box h1.title-font {
+  font-size: 60px;
+  line-height: 1;
+}
+@media screen and (min-width: 1025px) {
+  .hero-section .hero-title-box h1.title-font {
+    font-size: 90px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-section .hero-title-box h1.title-font {
+    font-size: 120px;
+  }
+}
+.hero-section .hero-content-box {
+  bottom: 0;
+  padding: 50px 70px 20px;
+}
+.hero-section .hero-content-box .hero-usp {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1025px) {
+  .hero-section .hero-content-box .hero-usp {
+    font-size: 60px;
+  }
+}
+.hero-section .hero-content-box .hero-usp .hero-usp-box span {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+}
+.hero-section .hero-content-box .hero-usp .hero-usp-box h4 {
+  font-size: 42px;
+  text-transform: unset;
+  line-height: 1;
+  display: block;
+  font-weight: 800;
+}
+.hero-section .hero-content-box .hero-usp .hero-usp-box {
+  padding: 0px 20px;
+}
+.hero-section .hero-content-box .hero-usp .hero-usp-box:not(:first-child) {
+  border-left: 1px solid #ffffff;
+}
+.hero-section .hero-content-box .button-white:hover, .hero-section .hero-content-box .button-white:focus,
+.hero-section .hero-content-box .button-black:hover,
+.hero-section .hero-content-box .button-black:focus {
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.squre-button {
+  font-size: 20px;
+  padding: 18px 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  transition: 0.3s all ease-in-out;
+}
+
+.button-white {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+}
+.button-white:hover, .button-white:focus {
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.button-black {
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+}
+.button-black:hover, .button-black:focus {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+}

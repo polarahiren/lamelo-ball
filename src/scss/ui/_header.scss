@@ -1,0 +1,30 @@
+header{
+    background-color: $black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @include media-query('b-m-up') {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        line-height: 0;
+
+        @include media-query('b-m-up') {
+            flex-direction: row;
+        }
+    }
+    .download-buttons{
+        a:not(:first-child){
+            margin-left: 20px;
+        }
+        @include media-query('b-s') {
+            margin-top: 15px;
+        }
+    }
+}

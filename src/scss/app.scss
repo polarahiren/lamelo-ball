@@ -4,5 +4,10 @@
 @import 'base/defaults';
 @import 'base/fonts';
 @import 'base/mixins';
+@import 'base/settings';
+@import 'base/theme';
 
 
+//ui
+@import 'ui/header';
+@import 'ui/hero';

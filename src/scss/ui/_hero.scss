@@ -1,0 +1,137 @@
+.hero-section {
+    color: $white;
+    position: relative;
+
+    .hero-banner {
+        height: 100vh;
+        width: 100%;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .hero-title-box,
+    .hero-content-box {
+        position: absolute;
+        right: 0;
+        background: #000000;
+        padding: 50px 70px;
+        z-index: 10;
+        width: 100%;
+        max-width: 600px;
+
+        @include media-query('b-xl-up') {
+            max-width: 800px;
+        }
+
+    }
+
+    .hero-title-box {
+        top: 0;
+
+        span {
+            font-size: 16px;
+            text-transform: unset;
+            letter-spacing: 0.20em;
+            margin-bottom: 20px;
+            display: block;
+
+            @include media-query('b-xl-up') {
+                letter-spacing: 0.30em;
+                margin-bottom: 30px;
+            }
+        }
+        h1.title-font {
+            font-size: 60px;
+            line-height: 1;
+
+            @include media-query('b-l-up') {
+                font-size: 90px;
+            }
+            @include media-query('b-xl-up') {
+                font-size: 120px;
+            }
+
+        }
+    }
+
+    .hero-content-box {
+        bottom: 0;
+        padding: 50px 70px 20px;
+        .hero-usp{
+            margin-bottom: 40px;
+            @include media-query('b-l-up') {
+                font-size: 60px;
+            }
+
+            .hero-usp-box{
+                span {
+                    font-size: 16px;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+                h4 {
+                    font-size: 42px;
+                    text-transform: unset;
+                    line-height: 1;
+                    display: block;
+                    font-weight: 800;
+                }
+            } 
+            .hero-usp-box {
+                padding: 0px 20px;
+
+                &:not(:first-child) {
+                    border-left: 1px solid #ffffff;
+                }
+            }
+        }
+
+        .button-white,
+        .button-black {
+            &:hover,
+            &:focus{
+                background: $black;
+                color:  $white;
+                border: 1px solid $white;
+            }
+        }
+    }
+}
+
+.squre-button {
+    font-size: 20px;
+    padding: 18px 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    transition: 0.3s all ease-in-out;
+}
+
+.button-white {
+    background: $white;
+    color: $black;
+    border: 1px solid $white;
+    &:hover,
+    &:focus{
+        background: $black;
+        color:  $white;
+        border: 1px solid $black;
+    }
+}
+
+.button-black {
+    background: $black;
+    color:  $white;
+    border: 1px solid $black;
+    &:hover,
+    &:focus{
+        background: $white;
+        color: $black;
+        border: 1px solid $white;
+    }
+}
