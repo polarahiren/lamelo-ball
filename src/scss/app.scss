@@ -1,6 +1,8 @@
-body{
-  font-size: 100px;
-  color: white;
-  background: red;
-  height: 100vh;
-}
+@charset "UTF-8";
+
+//base
+@import 'base/defaults';
+@import 'base/fonts';
+@import 'base/mixins';
+
+

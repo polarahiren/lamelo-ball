@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Settings
+   ========================================================================== */
+
+/* Fonts
+   ========================================================================== */
+$font-family: 'Styrene', monospace;
+$styrene: 'Styrene';
+$neubau: 'NeubauGrotesk';
+$font-size: 10px;
+
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+
+/* Colors
+   ========================================================================== */
+$black: #020203;
+$dark: #0e2021;
+$white: #fcfdff;
+$green: #43efc9;
+$primary: #0fffca;
+$gray: #dddddd;
+
+/* Headings
+      ========================================================================== */
+$h120: 120;
+$h96: 96;
+$h76: 76;
+$h60: 60;
+$h40: 40;
+$h44: 44;
+
+$p13: 1.3rem;
+$p15: 1.5rem;
+$p16: 1.6rem;
+$p18: 1.8rem;
+$p20: 2rem;
+$p24: 2.4rem;
+$p30: 3rem;
+$p36: 3.6rem;
+$p40: 4rem;
+
+/* Widths
+   ========================================================================== */
+$b_xs_start: 320px;
+$b_xs_end: 500px;
+$b_s_start: 501px;
+$b_s_end: 749px;
+$b_m_start: 750px;
+$b_m_end: 1024px;
+$b_l_start: 1025px;
+$b_xl_start: 1280px;
+$b_xxl_start: 1440px;
+$b_xxxl_start: 1600px;
+
+/* Breakpoints
+   ========================================================================== */
+$breakpoints: (
+        'b-xs' 'screen and (max-width: #{$b_xs_end})',
+        'b-s' 'screen and (max-width: #{$b_s_end})',
+        'b-s-up' 'screen and (min-width: #{$b_s_start})',
+        'b-m' 'screen and (max-width: #{$b_m_end})',
+        'b-m-up' 'screen and (min-width: #{$b_m_start})',
+        'b-l-up' 'screen and (min-width: #{$b_l_start})',
+        'b-xl-up' 'screen and (min-width: #{$b_xl_start})',
+        'b-xxl-up' 'screen and (min-width: #{$b_xxl_start})',
+        'b-xxxl-up' 'screen and (min-width: #{$b_xxxl_start})',
+        'retina'
+        '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)'
+);
+
+/* Transitions
+   ========================================================================== */
+$speed: 0.6s;
+$slow-speed: ($speed * 2);
+$easing: cubic-bezier(0.4, 0, 0.2, 1);
+
+/* Design
+   ========================================================================== */
+$desktop: 1600;
+$laptop: 1200;
+$tablet: 720;
+$mobile: 480;
