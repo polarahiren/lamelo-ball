@@ -1,21 +1,25 @@
 .hero-section {
     color: $white;
 
-    .hero-slider{
+    .hero-slider {
         margin-bottom: 0px;
-        .slick-list{
+
+        .slick-list {
             line-height: 0;
         }
-        .hero-slide{
+
+        .hero-slide {
             position: relative;
             height: 100vh;
             width: 100%;
+
             @include media-query('b-s') {
                 height: 630px;
                 padding-bottom: 100px;
             }
         }
-        .slick-dots{
+
+        .slick-dots {
             bottom: 30px;
 
             @include media-query('b-m-up') {
@@ -25,22 +29,24 @@
             @include media-query('b-l-up') {
                 max-width: 65%;
             }
-            li{
-                button:before{
+
+            li {
+                button:before {
                     content: "";
                     border: 2px solid $white;
                     border-radius: 100%;
                     opacity: 1;
                     width: 16px;
                     height: 16px;
-                } 
-                &.slick-active{
-                    button:before{
+                }
+
+                &.slick-active {
+                    button:before {
                         background-color: $white;
                     }
                 }
             }
-        } 
+        }
     }
 
     .hero-banner {
@@ -88,9 +94,10 @@
         @include media-query('b-s') {
             top: auto;
             bottom: 220px;
-            background: -webkit-linear-gradient(bottom, rgba(0,0,0,1) 10%,rgba(0,0,0,0.67) 40%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.67) 40%, rgba(255, 255, 255, 0) 100%);
+            /* Chrome10-25,Safari5.1-6 */
         }
-        
+
         span {
             font-size: 14px;
             text-transform: uppercase;
@@ -112,7 +119,7 @@
 
     .hero-content-box {
         bottom: 0;
-        
+
         @include media-query('b-s') {
             padding-bottom: 80px;
         }
@@ -120,17 +127,19 @@
         @include media-query('b-l-up') {
             padding: 50px 70px 20px;
         }
-        .hero-usp{
+
+        .hero-usp {
             @include media-query('b-s') {
                 justify-content: center;
                 margin-bottom: 20px;
             }
+
             @include media-query('b-l-up') {
                 font-size: 60px;
                 margin-bottom: 40px;
             }
 
-            .hero-usp-box{
+            .hero-usp-box {
                 span {
                     font-size: 16px;
                     display: block;
@@ -142,6 +151,7 @@
                         font-size: 12px;
                     }
                 }
+
                 h4 {
                     font-size: 42px;
                     text-transform: uppercase;
@@ -152,10 +162,12 @@
                         font-size: 28px;
                     }
                 }
-                &:first-child{
+
+                &:first-child {
                     padding-left: 0px;
                 }
-            } 
+            }
+
             .hero-usp-box {
                 padding: 0px 20px;
 
@@ -165,14 +177,15 @@
             }
         }
 
-        .hero-usp-buttons{
+        .hero-usp-buttons {
             @include media-query('b-s') {
                 justify-content: center;
             }
-            
-            a.squre-button{
+
+            a.squre-button {
                 text-align: center;
-                &:first-child{
+
+                &:first-child {
                     margin-right: 15px;
                 }
 
@@ -180,21 +193,24 @@
                     padding: 13px 20px;
                     font-size: 18px;
                 }
+
                 @include media-query('b-l-up') {
                     padding: 15px 30px;
-                    &:first-child{
+
+                    &:first-child {
                         margin-right: 25px;
-                    }   
+                    }
                 }
             }
         }
 
         .button-white,
         .button-black {
+
             &:hover,
-            &:focus{
+            &:focus {
                 background: $black;
-                color:  $white;
+                color: $white;
                 border: 1px solid $white;
             }
         }
@@ -212,6 +228,7 @@
     @include media-query('b-xl-up') {
         font-size: 90px;
     }
+
     @include media-query('b-xxl-up') {
         font-size: 120px;
     }
@@ -230,27 +247,29 @@
     background: $white;
     color: $black;
     border: 1px solid $white;
+
     &:hover,
-    &:focus{
+    &:focus {
         background: $black;
-        color:  $white;
+        color: $white;
         border: 1px solid $black;
     }
 }
 
 .button-black {
     background: $black;
-    color:  $white;
+    color: $white;
     border: 1px solid $black;
+
     &:hover,
-    &:focus{
+    &:focus {
         background: $white;
         color: $black;
         border: 1px solid $white;
     }
 }
 
-.black-box-space{
+.black-box-space {
     display: block;
     width: 100%;
     height: 180px;

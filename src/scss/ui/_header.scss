@@ -1,4 +1,4 @@
-header{
+header {
     background-color: $black;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -9,7 +9,7 @@ header{
         padding-bottom: 30px;
     }
 
-    .container{
+    .container {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -20,12 +20,13 @@ header{
             flex-direction: row;
         }
     }
-    .download-buttons{
-        a:not(:first-child){
+
+    .download-buttons {
+        a:not(:first-child) {
             margin-left: 20px;
         }
 
-        &.show{
+        &.show {
             display: flex !important;
         }
 
@@ -40,17 +41,18 @@ header{
             text-align: center;
             justify-content: center;
             padding: 0px 15px 25px;
-            
+
             a {
                 flex-grow: 1;
             }
-        
+
             a img {
                 width: 100%;
             }
-            
+
         }
     }
+
     .header-logo {
         display: flex;
         align-items: center;
@@ -59,16 +61,19 @@ header{
         @include media-query('b-s') {
             flex-grow: 1;
             width: 100%;
-            a img{
+
+            a img {
                 max-width: 250px;
             }
         }
-        .humburg-menu{
+
+        .humburg-menu {
             cursor: pointer;
             padding: 0px 10px;
+
             @include media-query('b-m-up') {
                 display: none;
-            }   
+            }
         }
     }
 }

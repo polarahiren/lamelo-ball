@@ -1,20 +1,23 @@
-.body-font{
+.body-font {
   font-family: 'Maison Neue';
 }
-.title-font{
+
+.title-font {
   font-family: 'Anton';
   font-weight: 400;
   letter-spacing: 0.01em;
 }
-.button-font{
+
+.button-font {
   font-family: 'PitchSans';
 }
 
 //utilities 
-.px-4{
+.px-4 {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -29,9 +32,11 @@
   @include media-query('b-m-up') {
     max-width: 800px;
   }
+
   @include media-query('b-l-up') {
     max-width: 991px;
   }
+
   @include media-query('b-xl-up') {
     max-width: 1200px;
   }
@@ -41,18 +46,30 @@
   }
 }
 
-.flex{
+.flex {
   display: flex;
 }
-.flex-flex{
+
+.flex-flex {
   flex-wrap: wrap;
 }
-.items-center{
+
+.items-center {
   align-items: center;
 }
-.justify-center{
-  justify-content:center;
+
+.justify-center {
+  justify-content: center;
 }
-.text-uppercase{
+
+.text-uppercase {
   text-transform: uppercase;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
