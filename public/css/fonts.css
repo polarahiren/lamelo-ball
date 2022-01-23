@@ -24,12 +24,36 @@
 
 @font-face {
   font-family: 'PitchSans';
+  src: url('../fonts/PitchSans-Regular.eot');
+  src: url('../fonts/PitchSans-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/PitchSans-Regular.woff2') format('woff2'),
+      url('../fonts/PitchSans-Regular.woff') format('woff'),
+      url('../fonts/PitchSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PitchSans';
   src: url('../fonts/PitchSans-Semibold.eot');
   src: url('../fonts/PitchSans-Semibold.eot?#iefix') format('embedded-opentype'),
       url('../fonts/PitchSans-Semibold.woff2') format('woff2'),
       url('../fonts/PitchSans-Semibold.woff') format('woff'),
       url('../fonts/PitchSans-Semibold.ttf') format('truetype');
   font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ArohA';
+  src: url('../fonts/Aroha.eot');
+  src: url('../fonts/Aroha.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Aroha.woff2') format('woff2'),
+      url('../fonts/Aroha.woff') format('woff'),
+      url('../fonts/Aroha.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }

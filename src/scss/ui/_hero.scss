@@ -8,9 +8,15 @@
         }
         .hero-slide{
             position: relative;
+            height: 100vh;
+            width: 100%;
+            @include media-query('b-s') {
+                height: 630px;
+                padding-bottom: 100px;
+            }
         }
         .slick-dots{
-            bottom: 15px;
+            bottom: 30px;
 
             @include media-query('b-m-up') {
                 max-width: 45%;
@@ -38,19 +44,9 @@
     }
 
     .hero-banner {
-        height: 100vh;
+        object-fit: cover;
         width: 100%;
-
-        img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-        }
-
-        @include media-query('b-s') {
-            height: 600px;
-            padding-bottom: 100px;
-        }
+        height: 100%;
     }
 
     .hero-title-box,
@@ -91,7 +87,7 @@
 
         @include media-query('b-s') {
             top: auto;
-            bottom: 185px;
+            bottom: 220px;
             background: -webkit-linear-gradient(bottom, rgba(0,0,0,1) 10%,rgba(0,0,0,0.67) 40%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
         }
         
@@ -112,29 +108,13 @@
                 margin-bottom: 30px;
             }
         }
-        h1.title-font {
-            font-size: 40px;
-            line-height: 1;
-
-            @include media-query('b-m-up') {
-                font-size: 60px;
-            }
-
-            @include media-query('b-xl-up') {
-                font-size: 90px;
-            }
-            @include media-query('b-xxl-up') {
-                font-size: 120px;
-            }
-
-        }
     }
 
     .hero-content-box {
         bottom: 0;
         
         @include media-query('b-s') {
-            padding-bottom: 50px;
+            padding-bottom: 80px;
         }
 
         @include media-query('b-l-up') {
@@ -221,6 +201,22 @@
     }
 }
 
+.title-xl {
+    font-size: 40px;
+    line-height: 1;
+
+    @include media-query('b-m-up') {
+        font-size: 60px;
+    }
+
+    @include media-query('b-xl-up') {
+        font-size: 90px;
+    }
+    @include media-query('b-xxl-up') {
+        font-size: 120px;
+    }
+}
+
 .squre-button {
     font-size: 20px;
     padding: 18px 30px;
@@ -252,4 +248,11 @@
         color: $black;
         border: 1px solid $white;
     }
+}
+
+.black-box-space{
+    display: block;
+    width: 100%;
+    height: 180px;
+    background-color: $black;
 }
