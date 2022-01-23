@@ -991,6 +991,11 @@ header .header-logo .humburg-menu {
   height: 180px;
   background-color: #000000;
 }
+@media screen and (max-width: 749px) {
+  .black-box-space {
+    display: none;
+  }
+}
 
 .brand-section {
   background: linear-gradient(0deg, #F0E886 0%, #90D1CB 100%);
@@ -1051,10 +1056,15 @@ header .header-logo .humburg-menu {
   max-width: 500px;
   align-items: flex-end;
 }
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 1024px) {
   .brand-section .max-w-sm {
     flex-direction: column;
+    max-width: 200px;
     align-items: flex-start;
+  }
+}
+@media screen and (max-width: 749px) {
+  .brand-section .max-w-sm {
     max-width: 140px;
     position: absolute;
     top: 240px;
@@ -1143,6 +1153,11 @@ header .header-logo .humburg-menu {
 }
 .video-box .watch-button {
   margin-top: 30px;
+}
+@media screen and (max-width: 749px) {
+  .video-box .watch-button img {
+    max-width: 55px;
+  }
 }
 .video-box .watch-button span {
   margin-left: 15px;

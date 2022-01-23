@@ -56,10 +56,13 @@
         width: 100%;
         max-width: 500px;
         align-items: flex-end;
-        
-        @include media-query('b-s') {
+
+        @include media-query('b-m') {
             flex-direction: column;
+            max-width: 200px;
             align-items: flex-start;
+        }        
+        @include media-query('b-s') {
             max-width: 140px;
             position: absolute;
             top: 240px;
@@ -154,6 +157,12 @@
     .watch-button {
         margin-top: 30px;
 
+        @include media-query('b-s') {
+            img{
+                max-width: 55px;
+            }
+        }
+        
         span {
             margin-left: 15px;
 
