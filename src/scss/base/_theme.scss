@@ -1,9 +1,14 @@
-// .title-font{
-//   font-family: 'Maison Neue';
-// }
-// .body-font{
-//   font-family: 'Anton';
-// }
+.body-font{
+  font-family: 'Maison Neue';
+}
+.title-font{
+  font-family: 'Anton';
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+.button-font{
+  font-family: 'PitchSans';
+}
 
 //utilities 
 .px-4{
