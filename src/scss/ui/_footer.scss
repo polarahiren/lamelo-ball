@@ -24,6 +24,15 @@ footer {
             li {
                 margin: 0px 20px;
 
+                @include media-query('b-m') {
+                    a{
+                        svg{
+                            width: 25px;
+                            height: 25px;
+                        }   
+                    }
+                }
+
                 a:hover {
                     transition: 0.2s all ease-in-out;
                     color: #91d2ca;

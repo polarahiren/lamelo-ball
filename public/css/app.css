@@ -706,6 +706,11 @@ header .download-buttons.show {
   header .download-buttons a img {
     width: 100%;
   }
+  header .download-buttons > .flex {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }
 header .header-logo {
   display: flex;
@@ -1361,6 +1366,12 @@ footer .top-footer ul.social-icons {
 }
 footer .top-footer ul.social-icons li {
   margin: 0px 20px;
+}
+@media screen and (max-width: 1024px) {
+  footer .top-footer ul.social-icons li a svg {
+    width: 25px;
+    height: 25px;
+  }
 }
 footer .top-footer ul.social-icons li a:hover {
   transition: 0.2s all ease-in-out;
