@@ -177,6 +177,9 @@
 
             .hero-usp-box {
                 padding: 0px 20px;
+                @include media-query('b-s') {
+                    padding: 0px 15px;
+                }
 
                 &:not(:first-child) {
                     border-left: 1px solid #ffffff;

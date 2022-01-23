@@ -538,19 +538,62 @@ a:hover {
   outline: 0;
 }
 
+body {
+  position: relative;
+}
+body:before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #ECE0D24D;
+  z-index: 9999;
+  top: 0px;
+  left: 80px;
+  position: absolute;
+}
+@media screen and (max-width: 1024px) {
+  body::before {
+    display: none;
+  }
+}
+
 @font-face {
   font-family: "Anton";
-  src: url("../../fonts/Anton-Regular.eot");
-  src: url("../../fonts/Anton-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Anton-Regular.woff2") format("woff2"), url("../../fonts/Anton-Regular.woff") format("woff"), url("../../fonts/Anton-Regular.ttf") format("truetype");
+  src: url("../fonts/Anton-Regular.eot");
+  src: url("../fonts/Anton-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Anton-Regular.woff2") format("woff2"), url("../fonts/Anton-Regular.woff") format("woff"), url("../fonts/Anton-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Maison Neue";
-  src: url("../../fonts/MaisonNeue-Light.eot");
-  src: url("../../fonts/MaisonNeue-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/MaisonNeue-Light.woff2") format("woff2"), url("../../fonts/MaisonNeue-Light.woff") format("woff"), url("../../fonts/MaisonNeue-Light.ttf") format("truetype");
+  src: url("../fonts/MaisonNeue-Light.eot");
+  src: url("../fonts/MaisonNeue-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/MaisonNeue-Light.woff2") format("woff2"), url("../fonts/MaisonNeue-Light.woff") format("woff"), url("../fonts/MaisonNeue-Light.ttf") format("truetype");
   font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PitchSans";
+  src: url("../fonts/PitchSans-Regular.eot");
+  src: url("../fonts/PitchSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PitchSans-Regular.woff2") format("woff2"), url("../fonts/PitchSans-Regular.woff") format("woff"), url("../fonts/PitchSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PitchSans";
+  src: url("../fonts/PitchSans-Semibold.eot");
+  src: url("../fonts/PitchSans-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/PitchSans-Semibold.woff2") format("woff2"), url("../fonts/PitchSans-Semibold.woff") format("woff"), url("../fonts/PitchSans-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ArohA";
+  src: url("../fonts/Aroha.eot");
+  src: url("../fonts/Aroha.eot?#iefix") format("embedded-opentype"), url("../fonts/Aroha.woff2") format("woff2"), url("../fonts/Aroha.woff") format("woff"), url("../fonts/Aroha.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -921,6 +964,11 @@ header .header-logo .humburg-menu {
 .hero-section .hero-content-box .hero-usp .hero-usp-box {
   padding: 0px 20px;
 }
+@media screen and (max-width: 749px) {
+  .hero-section .hero-content-box .hero-usp .hero-usp-box {
+    padding: 0px 15px;
+  }
+}
 .hero-section .hero-content-box .hero-usp .hero-usp-box:not(:first-child) {
   border-left: 1px solid #ffffff;
 }
@@ -1154,7 +1202,7 @@ header .header-logo .humburg-menu {
 }
 @media screen and (max-width: 749px) {
   .video-box {
-    padding: 20px;
+    padding: 20px 0px;
     margin-top: 0px;
     max-width: 100%;
   }
@@ -1194,7 +1242,7 @@ header .header-logo .humburg-menu {
 
 .shop-section {
   position: relative;
-  padding: 100px 0px;
+  padding: 100px 0px 150px;
   color: #ffffff;
   background-color: #000000;
   overflow: hidden;
@@ -1239,7 +1287,7 @@ header .header-logo .humburg-menu {
 }
 @media screen and (max-width: 749px) {
   .shop-box .product-content-box {
-    padding: 20px 15px;
+    padding: 20px 0px;
   }
 }
 .shop-box .product-content-box a {
@@ -1274,7 +1322,7 @@ header .header-logo .humburg-menu {
   .shop-box .product-title-box {
     position: relative;
     max-width: 100%;
-    padding: 20px 15px 0px 15px;
+    padding: 20px 0px 0px;
   }
 }
 .shop-box .product-title-box:before {
@@ -1320,7 +1368,7 @@ header .header-logo .humburg-menu {
 
 .product-bg-overlay {
   position: absolute;
-  bottom: 15%;
+  bottom: 14%;
   right: 0;
   background: rgba(25, 27, 32, 0.4);
   z-index: 0;

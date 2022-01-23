@@ -1,6 +1,5 @@
 {
     "/public/js/app.js": "/public/js/app.js",
-    "/public/css/app.css": "/public/css/app.css",
     "/public/fonts/Anton-Regular.eot": "/public/fonts/Anton-Regular.eot",
     "/public/fonts/Anton-Regular.ttf": "/public/fonts/Anton-Regular.ttf",
     "/public/fonts/Anton-Regular.woff": "/public/fonts/Anton-Regular.woff",
@@ -8,5 +7,6 @@
     "/public/fonts/MaisonNeue-Light.eot": "/public/fonts/MaisonNeue-Light.eot",
     "/public/fonts/MaisonNeue-Light.ttf": "/public/fonts/MaisonNeue-Light.ttf",
     "/public/fonts/MaisonNeue-Light.woff": "/public/fonts/MaisonNeue-Light.woff",
-    "/public/fonts/MaisonNeue-Light.woff2": "/public/fonts/MaisonNeue-Light.woff2"
+    "/public/fonts/MaisonNeue-Light.woff2": "/public/fonts/MaisonNeue-Light.woff2",
+    "/public/css/app.css": "/public/css/app.css"
 }
