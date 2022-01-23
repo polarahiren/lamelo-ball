@@ -14,6 +14,13 @@ try {
   window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 } catch (e) {}
 
+$(document).ready(function () {
+  $(".humburg-menu").click(function () {
+    $(".download-buttons").slideToggle(200);
+    $(".download-buttons").toggleClass('show');
+  });
+});
+
 /***/ }),
 
 /***/ "./node_modules/jquery/dist/jquery.js":

@@ -331,6 +331,7 @@ header {
   background-color: #000000;
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
 }
 @media screen and (min-width: 750px) {
   header {
@@ -353,14 +354,62 @@ header .container {
 header .download-buttons a:not(:first-child) {
   margin-left: 20px;
 }
+header .download-buttons.show {
+  display: flex !important;
+}
 @media screen and (max-width: 749px) {
   header .download-buttons {
-    margin-top: 15px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 999;
+    background: #000000;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 0px 15px 25px;
+  }
+  header .download-buttons a {
+    flex-grow: 1;
+  }
+  header .download-buttons a img {
+    width: 100%;
+  }
+}
+header .header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 749px) {
+  header .header-logo {
+    flex-grow: 1;
+    width: 100%;
+  }
+  header .header-logo a img {
+    max-width: 250px;
+  }
+}
+header .header-logo .humburg-menu {
+  cursor: pointer;
+  padding: 0px 10px;
+}
+@media screen and (min-width: 750px) {
+  header .header-logo .humburg-menu {
+    display: none;
   }
 }
 
 .hero-section {
   color: #ffffff;
+}
+@media screen and (max-width: 1024px) {
+  .hero-section {
+    padding-bottom: 100px;
+  }
+}
+.hero-section .hero-slider {
   position: relative;
 }
 .hero-section .hero-banner {
@@ -372,6 +421,11 @@ header .download-buttons a:not(:first-child) {
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .hero-section .hero-banner {
+    height: 500px;
+  }
 }
 .hero-section .hero-title-box,
 .hero-section .hero-content-box {
@@ -416,6 +470,14 @@ header .download-buttons a:not(:first-child) {
 }
 .hero-section .hero-title-box {
   top: 0;
+}
+@media screen and (max-width: 1024px) {
+  .hero-section .hero-title-box {
+    top: auto;
+    bottom: 160px;
+    background: -webkit-linear-gradient(bottom, black 10%, rgba(0, 0, 0, 0.67) 40%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+  }
 }
 .hero-section .hero-title-box span {
   font-size: 14px;

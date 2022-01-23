@@ -5,3 +5,9 @@ try {
   } catch (e) {}
   
   
+  $(document).ready(function(){
+    $(".humburg-menu").click(function(){
+      $(".download-buttons").slideToggle(200);
+      $(".download-buttons").toggleClass('show');
+    });
+  });  
