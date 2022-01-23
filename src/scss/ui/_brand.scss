@@ -122,7 +122,7 @@
 
 
 .video-box {
-    background: #000000;
+    background: $black;
     color: #ffffff;
     padding: 70px 80px 70px 0px;
     max-width: 600px;
@@ -140,7 +140,7 @@
         content: "";
         width: 2000px;
         height: 100%;
-        background: #000;
+        background: $black;
         position: absolute;
         left: -320%;
         top: 0;

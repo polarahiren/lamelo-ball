@@ -27,7 +27,7 @@
             }
 
             @include media-query('b-l-up') {
-                max-width: 65%;
+                max-width: 53%;
             }
 
             li {
@@ -66,6 +66,10 @@
         max-width: 100%;
 
         @include media-query('b-m') {
+            padding: 25px 35px;
+        }
+
+        @include media-query('b-s') {
             padding: 20px 25px;
         }
 
@@ -131,6 +135,9 @@
         .hero-usp {
             @include media-query('b-s') {
                 justify-content: center;
+            }
+
+            @include media-query('b-m') {
                 margin-bottom: 20px;
             }
 
@@ -184,6 +191,7 @@
 
             a.squre-button {
                 text-align: center;
+                font-weight: 700;
 
                 &:first-child {
                     margin-right: 15px;

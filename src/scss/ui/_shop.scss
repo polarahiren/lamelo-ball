@@ -3,12 +3,21 @@
     padding: 100px 0px;
     color: $white;
     background-color: $black;
+    overflow: hidden;
+    
+    @include media-query('b-s') {
+        padding: 70px 0px 50px;
+    }
 
     h2.section-title {
         font-size: 40px;
         text-transform: uppercase;
         margin-bottom: 80px;
         line-height: 1;
+        
+        @include media-query('b-s') {
+            margin-bottom: 40px;
+        }
     }
 
     .shop-wide-section {
@@ -22,6 +31,7 @@
     max-width: 800px;
     overflow: hidden;
     width: 66%;
+    background: $black;
 
     // @include media-query('b-m') {
     //     width: 55%;
@@ -33,7 +43,7 @@
 
 
     .product-content-box {
-        padding: 40px 0px;
+        padding: 40px 20px 40px 0px;
         font-family: "PitchSans";
         line-height: 24px;
 
@@ -74,7 +84,18 @@
         @include media-query('b-s') {
             position: relative;
             max-width: 100%;
-            padding: 0px 15px;
+            padding: 20px 15px 0px 15px;
+        }
+
+        &:before {
+            content: "";
+            width: 2000px;
+            height: 100%;
+            background: #000;
+            position: absolute;
+            left: 90%;
+            top: 0;
+            z-index: 1;
         }
 
         h4 {
@@ -82,16 +103,31 @@
             letter-spacing: 2px;
             margin-bottom: 20px;
         }
+
+        @include media-query('b-s') {
+            h2{
+                font-size: 50px;
+            }
+        }
     }
 }
 
 .shop-img {
     width: 100%;
+    background: rgb(25 27 31 / 50%);
+    height: 520px;
+
+    @include media-query('b-s') {
+        height: 450px;
+    }
 
     img {
         width: 100%;
+        height: 100%;
         overflow: hidden;
-        background: rgb(25 27 31 / 50%);
+        object-fit: cover;
+        object-position: left;
+
     }
 }
 
