@@ -92,6 +92,7 @@
 
     }
 
+
     .hero-title-box {
         top: 0;
 
@@ -118,6 +119,11 @@
                 letter-spacing: 0.30em;
                 margin-bottom: 30px;
             }
+        }
+        
+        h1, span{
+            transform: translateX(50px);
+            opacity: 0;
         }
     }
 
@@ -147,6 +153,9 @@
             }
 
             .hero-usp-box {
+                transform: translateY(-50px);
+                opacity: 0;
+
                 span {
                     font-size: 16px;
                     display: block;
