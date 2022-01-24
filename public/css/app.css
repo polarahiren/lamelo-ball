@@ -724,6 +724,31 @@ header .container {
     flex-direction: row;
   }
 }
+header .logo svg {
+  opacity: 0;
+  transform: scale(0.8);
+}
+header .logo .logo-text {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 800;
+  font-family: "Anton";
+  display: flex;
+  margin-left: 12px;
+}
+header .logo .logo-text span {
+  padding-left: 2px;
+  display: block;
+  transform: translateX(-15px);
+  opacity: 0;
+}
+header .logo .logo-text span.ml-2 {
+  padding-left: 12px;
+}
+header .download-buttons a.block {
+  transform: translateY(100px);
+  opacity: 0;
+}
 header .download-buttons a:not(:first-child) {
   margin-left: 20px;
 }
